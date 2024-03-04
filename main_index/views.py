@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
-
 def index(request):
-    return HttpResponse("Welcome to main index.")
+    return render(request,"main/index.html")
+#    return HttpResponse("Welcome to main index.<br><a href = student_app/>Здесь ссылка</a>")
